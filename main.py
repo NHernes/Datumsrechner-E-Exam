@@ -37,7 +37,10 @@ if datum!="":
     word_str_support=word_date_support.strftime("%d.%m.%Y")
 
     verbleibend_word_support=(word_date_support-today).days
-    verbleibend_word_support=f"{verbleibend_word} Tage"
+    verbleibend_word_support=f"{verbleibend_word_support} Tage"
+
+    verbleibend_tn=(tn_date-today).days
+    verbleibend_tn=f"{verbleibend_tn} Tage"
 
 
 
