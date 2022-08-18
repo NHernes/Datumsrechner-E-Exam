@@ -24,16 +24,16 @@ if datum!="":
     today=datetime.datetime.now().date()
     datum=datetime.datetime.strptime(datum,"%d.%m.%Y")
 
-    word_date=(datum+datetime.timedelta(weeks=8)).date()
+    word_date=(datum-datetime.timedelta(weeks=8)).date()
     word_str=word_date.strftime("%d.%m.%Y")
     
-    tn_date=(datum+datetime.timedelta(weeks=4)).date()
+    tn_date=(datum-datetime.timedelta(weeks=4)).date()
     tn_str=tn_date.strftime("%d.%m.%Y")
     
     verbleibend_word=(word_date-today).days
     verbleibend_word=f"{verbleibend_word} Tage"
 
-    word_date_support=(datum+datetime.timedelta(weeks=5)).date()
+    word_date_support=(datum-datetime.timedelta(weeks=5)).date()
     word_str_support=word_date_support.strftime("%d.%m.%Y")
 
     verbleibend_word_support=(word_date_support-today).days
