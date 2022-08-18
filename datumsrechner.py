@@ -33,7 +33,7 @@ if datum!="":
     verbleibend_word=(word_date-today).days
     verbleibend_word=f"{verbleibend_word} Tage"
 
-    word_date_support=(datum+datetime.timedelta(weeks=4)).date()
+    word_date_support=(datum+datetime.timedelta(weeks=5)).date()
     word_str_support=word_date_support.strftime("%d.%m.%Y")
 
     verbleibend_word_support=(word_date_support-today).days
